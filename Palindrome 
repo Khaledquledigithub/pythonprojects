@@ -1,0 +1,8 @@
+#Palindrome
+
+n=str(input("enter="))
+revstr=n[: :-1]
+if n==revstr:
+	print("Is a Palindrome")
+else:
+	print("Not a Palindrome")

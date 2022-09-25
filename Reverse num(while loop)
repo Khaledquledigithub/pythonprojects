@@ -1,0 +1,5 @@
+#Printing number in revese order 
+x=int(input("Enter the num="))
+while x!=0:
+	print(x)
+	x-=2
