@@ -1,0 +1,21 @@
+#Finding Avg using def function
+
+def avg(s):
+	total=sum(s)
+	print("Total sum=",total)
+	c=len(s)
+	print("The length=",c)
+	print("The Average=",total/c)
+
+#Using input method
+x=int(input("Enter="))
+l=[]
+c=1
+l.append(x)
+while x!=0:
+	c+=1
+	x=int(input("enter another="))
+	if x!=0:
+		l.append(x)
+		print(l)
+a=avg(l)
