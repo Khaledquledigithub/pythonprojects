@@ -1,0 +1,5 @@
+
+#Creating Table
+n=int(input("Enter="))
+for i in range(1,12):
+	print(n,"×",i,"=",i*n)
