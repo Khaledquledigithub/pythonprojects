@@ -1,0 +1,18 @@
+
+#converting feet $inches into cm
+feet=float(input("Enter Feet="))
+inches=float(input("Enter Inches="))
+fcm=feet*12*2.54
+icm=inches*2.54
+total=fcm+icm
+print("Heights in cm=",total)
+
+#using a Def function
+def cm(f,i):
+	fet=f*12*2.54
+	inc=i*2.54
+	total=fet+inc
+	print(total)
+feet=float(input("Enter Feet="))
+inch=float(input("Enter inch="))
+cm(feet,inch)

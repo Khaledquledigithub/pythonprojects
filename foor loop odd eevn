@@ -1,0 +1,6 @@
+#Print odd n even num using for loop
+for i in range(1,15):
+	if i%2==0:
+		print("The Number is Even=",i)
+	else:
+		print("The Number is Odd =",i)

@@ -1,0 +1,11 @@
+odd=[(1,"one"),(3,"three"),(5,"five"),(7,"seven"),(9,"nine")]
+odd1=dict(odd)
+print(odd1)
+print(odd1.keys())
+print(odd1.values())
+print(odd1.get(7))
+print(odd1.get(2))
+print(len(odd1))
+print(odd1.get(9))
+del.odd
+print(odd1)
