@@ -1,0 +1,28 @@
+#Using input Method
+wid=float(input("enter width="))
+lent=float(input("enter length="))
+area=wid*lent
+print("Area=",area,"CM")
+#Using a def Function
+def area(width,lenth):
+	area=width*lenth
+	print(area,"cm")
+widt=float(input("enter width="))
+lentt=float(input("enter length="))
+area(widt,lentt)
+#Using while
+wid1=float(input("enter width="))
+lent1=float(input("enter length="))
+while wid1!=0 and lent1!=0:
+	add=wid1*lent1
+	print(add,"cm")
+	break
+#Using For
+widd=float(input("enter width="))
+lendt=float(input("enter length="))
+for i in (widd,lendt):
+	print(widd*lendt,"cm")
+	break
+	
+
+
