@@ -1,0 +1,28 @@
+#Input method
+cost=float(input("enter mael cost="))
+tip=(cost/100)*18
+tax=cost*0.18
+print(tip,tax)
+total=cost+tax+tip
+print(total)
+#while loop method
+cost=float(input("enter mael cost="))
+while cost!=0:
+	tax=cost*0.18 
+	tip=cost*0.18
+	total=cost+tax+tip
+	print("tax=",tax,"Tip=",tip)
+	print("Total=",total)
+	break
+#using def function
+def cost1(x):
+	total=(x*0.18)+(x*0.18)+x
+	print(total)
+
+cost=int(input("enter mael cost="))
+cost1(cost)
+#Using Is statement
+cost=float(input("enter mael cost="))
+if cost!=0:
+	total=(cost*0.18)+(0.18*cost)+cost
+	print("Total=",total)
