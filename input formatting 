@@ -1,0 +1,9 @@
+#printing mulple ways
+#giving one input value
+x1=input("Enter a word=")
+print("Python say",x1)
+
+#giving two input value
+x=str(input("Enter a sentence="))
+y=str(input("Enter a word="))
+print(x,y)
