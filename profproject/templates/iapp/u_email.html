@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Update_Email</h1>
+<form method="POST">
+Email:<input type="email" name="Email" value="{{s.email}}"><br>
+
+<input type="submit" name="sumbit_Update">
+{% csrf_token %}
+</form>
+</body>
+</html>

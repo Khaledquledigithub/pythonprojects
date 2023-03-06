@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Update_Address</h1>
+<form method="POST">
+
+Address:<input type="text" name="Address" value="{{s.address}}"><br>
+<br>
+<input type="submit" name="sumbit_Update">
+{% csrf_token %}
+</form>
+</body>
+</html>

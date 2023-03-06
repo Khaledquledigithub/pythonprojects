@@ -1,0 +1,23 @@
+	return render(request,"form.html",context)
+if request.method=="POST":
+		prime_form=UserForm(request.POST,prefix ="User")
+		E_form=EmailForm(request.POST,prefix ="email")
+		A_form=AddressForm(request.POST,prefix ="address")
+		if prime_form.is_valid() and E_form.is_valid() and A_form.is_valid():
+			User=prime_form.save()
+			context
+			email=E_form.save()
+			address=A_form.save()
+			return HttpResponse("/viewer/%s/"%(prime.name))
+		else:
+			print("Fail")
+	else:
+		prime_form=UserForm(prefix ="User")
+		E_form=EmailForm(prefix ="email")
+		A_form=AddressForm(prefix ="address")
+		context ={
+		"prime_form":prime_form,
+		"E_form":E_form,
+		"A_form":A_form
+
+		}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Update_User</h1>
+<form method="POST">
+User:<input type="text" name="Username" value="{{s.user}}"><br>
+
+<input type="submit" name="sumbit_Update">
+{% csrf_token %}
+</form>
+</body>
+</html>

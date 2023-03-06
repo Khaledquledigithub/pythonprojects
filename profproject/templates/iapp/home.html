@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>User Detail</h1>
+	<table border="2">
+
+		<thead><th style="width: 66.5%">USER_NAME</th><th>ACTIONS</th></thead>
+		
+		{% for s in u %}
+		<tr><td>{{s.Username}}</td>
+		<td><a href="/update/{{s.id}}"><button>Update</button></a></td>
+		<td><a href="/delete/{{s.id}}"><button>Delete</button></a></td>
+			
+		</tr>
+		
+		
+		{% endfor %}
+	</table>
+	<table border="2">
+		<thead><th style="width: 70%">EMAIL</th><th>Actions</th></thead>
+		
+		{% for s in e %}
+		<tr><td>{{s.Email}}</td>
+		<td><a href="/update1/{{s.id}}"><button>Update</button></a></td>
+		<td><a href="/delete1/{{s.id}}"><button>Delete</button></a></td>
+		</tr>
+{% endfor %}
+	</table>
+	
+	<table border="2">
+		<thead><th style="width: 70%">ADDRESS</th><th>Actions</th></thead>
+		
+		{% for s in a %}
+		<tr><td>{{s.Address}}</td>
+		<td><a href="/update2/{{s.id}}"><button>Update</button></a></td>
+			<td><a href="/delete2/{{s.id}}"><button>Delete</button></a></td>
+			</tr>
+{% endfor %}
+	</table>
+</body>
+</html>
